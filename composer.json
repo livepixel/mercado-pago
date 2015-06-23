@@ -1,0 +1,20 @@
+{
+    "name": "livepixel/mercado-pago",
+    "description": "Mercado Pago API SDK for Laravel",
+    "keywords": ["mercadopago", "sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo Maia",
+            "email": "rodurma@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LivePixel\\MercadoPago\\" : "src/"
+        }
+    }
+}
