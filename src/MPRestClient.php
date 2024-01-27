@@ -20,6 +20,9 @@ class MPRestClient {
         curl_setopt($connect, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($connect, CURLOPT_CUSTOMREQUEST, $method);
         curl_setopt($connect, CURLOPT_HTTPHEADER, array("Accept: application/json", "Content-Type: " . $content_type));
+        
+        curl_setopt($connect, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($connect, CURLOPT_SSL_VERIFYPEER, 0);
 
         return $connect;
     }
